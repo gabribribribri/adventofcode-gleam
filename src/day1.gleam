@@ -18,14 +18,8 @@ pub fn part2(data: String) -> Int {
   |> list.map(string.reverse)
   |> list.map(replace_spelled_out_right)
   |> list.map(string.reverse)
-  // |> list.map(printret)
   |> list.map(value_of_line)
   |> int.sum
-}
-
-fn printret(s: String) {
-  s |> io.println
-  s
 }
 
 fn replace_spelled_out_left(s: String) -> String {
